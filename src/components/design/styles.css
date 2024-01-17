@@ -1,0 +1,64 @@
+
+
+#home, #contact, #about {
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-family: "/src/components/assets/fonts/Oswald.ttf";
+}
+
+#home:hover, #contact:hover, #about:hover {
+    background-color: darkgray;
+}
+
+#header1 {
+    color: white;
+    text-align: center;
+    line-height: 300px;
+    font-size: 60px;
+    font-family: "/src/components/assets/fonts/impact.ttf";
+}
+
+#work {
+    background-color: transparent;
+    border-color: black;
+    color: white;
+    border-radius: 30%;
+    position: sticky;
+    top: 1000px;
+    left: 1235px;
+    height: 30px;
+    width: 90px;
+    font-family: "/src/components/assets/fonts/Oswald.ttf";
+}
+
+#work:hover {
+    background-color: darkgray;
+    border-color: transparent;
+}
+
+#insta {
+    text-align: center;
+    height: 30px;
+    border-radius: 15px;
+    position: relative;
+    top: -135px;
+    left: 920px;
+}
+
+#email {
+    height: 30px;
+    border-radius: 15px;
+    position: relative;
+    top: -135px;
+    left: 930px;
+}
+
+#insta:hover {
+    background-color: darkgray;
+}
+
+#email:hover {
+    background-color: darkgray;
+}
