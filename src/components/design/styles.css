@@ -1,64 +1,72 @@
+@font-face {
+    font-family: 'impact';
+    src: url('/src/components/assets/fonts/impact.ttf') format('truetype');
+}
 
-
-#home, #contact, #about {
+#Home, #About, #Contact {
     background-color: transparent;
     border-color: transparent;
     color: white;
     font-size: 20px;
-    font-family: "/src/components/assets/fonts/Oswald.ttf";
+    font-family: 'impact';
+    letter-spacing: px;
 }
 
-#home:hover, #contact:hover, #about:hover {
+
+#Home:hover, #About:hover, #Contact:hover  {
     background-color: darkgray;
 }
 
-#header1 {
+#Header1 {
     color: white;
+    position: relative;
     text-align: center;
-    line-height: 300px;
-    font-size: 60px;
-    font-family: "/src/components/assets/fonts/impact.ttf";
+    bottom: -150px;
+    font-size: 50px;
 }
 
-#work {
+@font-face {
+    font-family: 'Oswald';
+    src: url('/src/components/assets/fonts/Oswald.ttf') format('truetype');
+}
+
+.fixed-button {
     background-color: transparent;
     border-color: black;
     color: white;
-    border-radius: 30%;
-    position: sticky;
-    top: 1000px;
-    left: 1235px;
-    height: 30px;
-    width: 90px;
-    font-family: "/src/components/assets/fonts/Oswald.ttf";
+    border-radius: 20%;
+    font-size: 17px;
+    position: fixed;
+    top: 295px;
+    left: 46%;
+    width: 20px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+    width: auto;
+    font-family:'Oswald', sans-serif, 'Oswald';
 }
 
-#work:hover {
+#Work:hover {
     background-color: darkgray;
-    border-color: transparent;
-}
-
-#insta {
-    text-align: center;
-    height: 30px;
-    border-radius: 15px;
-    position: relative;
-    top: -135px;
-    left: 920px;
 }
 
 #email {
-    height: 30px;
-    border-radius: 15px;
-    position: relative;
-    top: -135px;
-    left: 930px;
+    background-color: none  ;
+    position: fixed;
+    bottom: 520px;
+    left: 435px;
+    width: 35px;
+    height: auto;
 }
 
-#insta:hover {
-    background-color: darkgray;
-}
-
-#email:hover {
-    background-color: darkgray;
+#insta {
+    background-color: none  ;
+    border-radius: 20px;
+    position: fixed;
+    bottom: 520px;
+    left: 485px;
+    width: 35px;
+    height: auto;
 }
