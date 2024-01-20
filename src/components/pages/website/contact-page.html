@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang = "en">
+    
+<head>
+    <body>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+        <link rel = "stylesheet" href = "/src/components/design/styles.css">
+        <title>Portfolio</title>
+</head>
+
+<body>
+    <nav>
+        <ol class = "nav-links">
+            <button id = "home-btn" class = "link"><a href = "front-page.html">HOME</a></button>
+            <button id = "contact-btn" class = "link"><a href = "contact-page.html">CONTACT</a></button>
+            <button id = "about-btn" class = "link"><a href = "about-page.html">ABOUT</a></button>
+        </ol>
+    </nav>
+</body>
+
+<body>
+    <div class =  "container3">
+        <form action = "submit_form.php" method = "post">
+            <label for = "fname">First Name</label>
+            <input type = "text" id = "fname" name = "firstname" placeholder = "Your Name...">
+
+            <label for = "email">Your Email</label>
+            <input type = "text" id = "email" name = "email" placeholder = "Your Email...">
+
+            <label for = "message">Message</label>
+            <textarea id = "message" name = "message" placeholder = "Your Message..." style = "height: 200px;"></textarea>
+
+            <input type = "submit" value = "Submit">
+        </form>
+    </div>
+</body>
+</html>

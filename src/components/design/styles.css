@@ -1,72 +1,160 @@
+body{
+    height: 100vh;
+    background: #212529;
+}
+
 @font-face {
-    font-family: 'impact';
-    src: url('/src/components/assets/fonts/impact.ttf') format('truetype');
-}
-
-#Home, #About, #Contact {
-    background-color: transparent;
-    border-color: transparent;
-    color: white;
-    font-size: 20px;
-    font-family: 'impact';
-    letter-spacing: px;
-}
-
-
-#Home:hover, #About:hover, #Contact:hover  {
-    background-color: darkgray;
-}
-
-#Header1 {
-    color: white;
-    position: relative;
-    text-align: center;
-    bottom: -150px;
-    font-size: 50px;
+    font-family: 'Impact';
+    src: url(/src/components/assets/fonts/impact.ttf);
 }
 
 @font-face {
     font-family: 'Oswald';
-    src: url('/src/components/assets/fonts/Oswald.ttf') format('truetype');
+    src: url(/src/components/assets/fonts/Oswald.ttf);
 }
 
-.fixed-button {
+.nav-links {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+
+#home-btn, #about-btn, #contact-btn {
     background-color: transparent;
-    border-color: black;
+    border-color: transparent;
     color: white;
-    border-radius: 20%;
-    font-size: 17px;
-    position: fixed;
-    top: 295px;
-    left: 46%;
-    width: 20px;
-    padding: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    cursor: pointer;
-    width: auto;
-    font-family:'Oswald', sans-serif, 'Oswald';
+    font-size: 25px;
+    margin-left: 15px;
+    font-family: 'Oswald';
 }
 
-#Work:hover {
+#home-btn:hover, #about-btn:hover, #contact-btn:hover {
     background-color: darkgray;
 }
 
-#email {
-    background-color: none  ;
-    position: fixed;
-    bottom: 520px;
-    left: 435px;
-    width: 35px;
-    height: auto;
+a {
+    color: white;
+    text-decoration: none;
 }
 
-#insta {
-    background-color: none  ;
+.main{
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.main h4 {
+    font-size: 90px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.main p.title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: -100px;
+    font-family: 'Oswald';
+    word-spacing: 10px;
+}
+
+.main button {
+    background-color: transparent;
+    font-size: 20px;
     border-radius: 20px;
-    position: fixed;
-    bottom: 520px;
-    left: 485px;
-    width: 35px;
-    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: -35px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: 'Oswald';
+}
+
+.main button:hover {
+    background-color: darkgray;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#container {
+    position: relative
+}
+
+#soccer, #soccer1 {
+    margin-top: auto;
+    margin-bottom: auto;
+    transform: translate(-0%, -90%);
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.image-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#videography, #photography {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Oswald';
+    position: absolute;
+}
+
+
+#videography {
+    transform: translate(4%, -20%);
+    left: 36.3%;
+    top: 44vh;
+}
+
+#photography {
+    transform: translate(10%, -20%);
+    right:36.3%;
+    top: 44vh;
+}
+
+input[type=text], select, textarea {
+    background-color: transparent;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: darkgray;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: black;
+}
+
+.container3 {
+    border-radius: 5px;
+    color: white;
+    padding: 20px;
 }
