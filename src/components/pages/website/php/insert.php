@@ -13,7 +13,7 @@
         // username => root
         // password => empty
         // database name => staff
-        $conn = mysqli_connect("localhost", "Frost", "eLD8Vs7*8qr,-g#mmPZo", "admin");
+        $conn = mysqli_connect("localhost", "root", "", "staff");
          
         // Check connection
         if($conn === false){
